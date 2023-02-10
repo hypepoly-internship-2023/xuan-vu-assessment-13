@@ -1,23 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuCtrl : MonoBehaviour
 {
     [SerializeField] private Transform menu;
-    [SerializeField] private Transform levelSelect;
+    [SerializeField] private TextMeshProUGUI numberHeat;
     [SerializeField] private Transform setting;
     [SerializeField] private Transform popupVote;
+    [SerializeField] private GameObject moreHeat;
     public void OnPlay()
     {
-        menu.gameObject.SetActive(false);
-        levelSelect.gameObject.SetActive(true);
-    }
-    public void OffPlay()
-    {
-        levelSelect.gameObject.SetActive(false);
-        menu.gameObject.SetActive(true);
+        int heat = int.Parse(numberHeat.text);
+        if(heat > 0)
+        {
+            LoadGame();
+        }
+        else
+            moreHeat.SetActive(true);
     }
     public void OnSetting()
     {
@@ -34,6 +36,10 @@ public class MenuCtrl : MonoBehaviour
     public void OffVote()
     {
         popupVote.gameObject.SetActive(false);
+    }
+    public void OffMoreHeat()
+    {
+        moreHeat.gameObject.SetActive(false);
     }
     public void LoadGame()
     {

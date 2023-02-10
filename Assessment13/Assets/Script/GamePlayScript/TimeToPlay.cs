@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class TimeToPlay : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI RunTime;
+    [SerializeField] protected TextMeshProUGUI RunTime;
+    [SerializeField] protected GameObject resuilt;
+    [SerializeField] protected GameObject starbox;
     private float TimeLeft = 90f;
-    public bool OnTime = true;
+    private bool OnTime = true;
     private void Update()
     {
         if(OnTime)
@@ -20,8 +22,7 @@ public class TimeToPlay : MonoBehaviour
             else
             {
                 TimeLeft = 0;
-                RunTime.text = "Game Over";
-                OnTime = false;
+                GameOver();
             }
         }     
     }
@@ -35,11 +36,13 @@ public class TimeToPlay : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         OnTime = false ;
-        RunTime.text = "Win";
+        starbox.SetActive(true);
+        resuilt.SetActive(true);
     }
     public void GameOver()
     {
         OnTime = false;
-        RunTime.text = "Game Over";
+        starbox.SetActive(false);
+        resuilt.SetActive(true);
     }    
 }
