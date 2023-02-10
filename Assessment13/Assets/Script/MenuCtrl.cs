@@ -11,15 +11,22 @@ public class MenuCtrl : MonoBehaviour
     [SerializeField] private Transform setting;
     [SerializeField] private Transform popupVote;
     [SerializeField] private GameObject moreHeat;
+    public static PopupData instance;
+    string heatPrefs = "NumberOfHeat";
+    private void Start()
+    {
+        PlayerPrefs.SetInt(heatPrefs, PopupData.heatFlus);
+        numberHeat.text = PlayerPrefs.GetInt(heatPrefs).ToString();
+    }
     public void OnPlay()
     {
         int heat = int.Parse(numberHeat.text);
-        if(heat > 0)
+        if (heat > 0)
         {
             LoadGame();
         }
         else
-            moreHeat.SetActive(true);
+            SceneManager.LoadScene("Popup");
     }
     public void OnSetting()
     {
@@ -40,7 +47,7 @@ public class MenuCtrl : MonoBehaviour
     public void OffMoreHeat()
     {
         moreHeat.gameObject.SetActive(false);
-    }
+    } 
     public void LoadGame()
     {
         SceneManager.LoadScene("Game");

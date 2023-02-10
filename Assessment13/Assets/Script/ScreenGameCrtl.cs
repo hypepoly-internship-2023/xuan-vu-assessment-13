@@ -28,5 +28,6 @@ public class ScreenGameCrtl : MonoBehaviour
     public void BackHome()
     {
         SceneManager.LoadScene("Home");
+        
     }
 }
