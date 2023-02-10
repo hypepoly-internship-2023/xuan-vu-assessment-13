@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MainSprite
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 59acbce98aeb8d844944685b0fbd9654, type: 3}
+    - {fileID: 2800000, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+    - {fileID: 2800000, guid: ea8431320aa331646ab3ac41aad90c2e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1960470755, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -121534501, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -1994130820, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -344454802, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: 325877461, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: 1247071510, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -634285184, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: 1600331269, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -6930640, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -1338804385, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -648161401, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -817407515, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -1626197643, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -833629181, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: 1308615229, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: 97711263, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -144851800, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -229615595, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: 749242012, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -372077487, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: 572289886, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: -792369557, guid: 471ab512e5d301842b158cf675c9713d, type: 3}
+  - {fileID: 21300000, guid: ea8431320aa331646ab3ac41aad90c2e, type: 3}
+  - {fileID: -369145992, guid: 59acbce98aeb8d844944685b0fbd9654, type: 3}
+  - {fileID: 1608740210, guid: 59acbce98aeb8d844944685b0fbd9654, type: 3}
+  - {fileID: -1030124590, guid: 59acbce98aeb8d844944685b0fbd9654, type: 3}
+  - {fileID: 1573435827, guid: 59acbce98aeb8d844944685b0fbd9654, type: 3}
+  - {fileID: 594938694, guid: 59acbce98aeb8d844944685b0fbd9654, type: 3}
+  - {fileID: 1746494320, guid: 59acbce98aeb8d844944685b0fbd9654, type: 3}
+  - {fileID: 197007561, guid: 59acbce98aeb8d844944685b0fbd9654, type: 3}
+  - {fileID: -1069755256, guid: 59acbce98aeb8d844944685b0fbd9654, type: 3}
+  - {fileID: -1219628126, guid: 59acbce98aeb8d844944685b0fbd9654, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Button_Question
+  - Button_Home
+  - Button_gray
+  - Button_plus
+  - Button_resume
+  - Button_blue
+  - Button_setting
+  - Button_OK
+  - Button_Mute
+  - Button_close
+  - Button_green
+  - Button_Leve
+  - Button_Level
+  - Button_Music
+  - Button_vote
+  - Button_0
+  - Button_red
+  - Button_return
+  - Button_pause
+  - Button_exit
+  - Button_Leaderboard
+  - Button_log
+  - pngwing.com
+  - Window_3Star
+  - Window_result
+  - Heat
+  - MainMenu
+  - Window_LevelSelect
+  - Banner
+  - Window_Popup
+  - Window_StarBox
+  - Star
+  m_RenderDataMap: {}
+  m_Tag: MainSprite
+  m_IsVariant: 0
